@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+<title>登录页面</title>
+<style>
+    body
+    {
+        background-image: url('https://static.hd1080.pro/wp-content/uploads/2021/09/20210916001517176.jpg');
+        background-repeat: no-repeat;
+     background-size: 400px 400px;
+        background-position: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: relative;
+        top: 60px;
+     }
+    #name{
+        width: 200px;
+        height: 20px;
+        border-radius: 5px;
+        margin-left: auto;
+        border: 1px solid #ccc;
+        padding: 8px;
+        position: relative;
+        left: 500px ;
+    }
+    #password{
+        width: 200px;
+        height: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 8px;
+        position: relative;
+        left: 500px ;
+    }
+    #remember{
+        white-space: nowrap;      /*nowrap: 规定文本不换行，可以将文本框内的文字全部显示在一行,在css中注释应使用/*  */
+        margin-left: 10px;
+        margin-top: 10px; 
+        font-size: 0.875em;
+        position: relative;
+        left: 490px ;
+    }   
+    #submit{
+        margin-top: 10px;
+        margin-left: 150px;
+        background-color: blue;
+        color: white;
+        height: 40px;
+        width: 260px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+        left:330px ;
+    }
+    #activateLink {
+        white-space: nowrap;
+            display: inline-block;
+            margin-top: 10px;
+            color: #3a6feb;
+            text-decoration: none;
+            position: relative;
+            left: 610px ;
+        }
+    
+
+</style>
+</head>
+<body>
+    <br>
+    <br>
+    <div style="text-align:center;margin-top: 5px;margin:0;padding:0;">
+<br>
+<form action="/" method="post">
+
+    <label  for="name" ></label>
+    <input type="text" placeholder ="请输入学号/工号" id="name" name="name"  required>
+ <!---为了在输入密码时显示输入框里的提示信息，可以使用 placeholder 属性。placeholder 属性允许在输入框为空时显示提示信息，但不会被提交表单。这比 value 属性更适合，因为 value 会在表单提交时一并提交，但 placeholder 只是提示信息，对用户友好且不影响表单数据的提交。-->     
+ <label for="password"></label>
+    <input type="password" placeholder ="请输入密码" id="password" name="password" ;required>
+    <br>
+    <label for="remember" id="remember">
+    <input type="checkbox"   name="remember";>七天免登录</label>
+<!---type="checkbox": 该属性设置输入类型为复选框（checkbox），type="radio"：该属性设置输入类型为单选框（radio）。type="checkbox"和type="radio"的区别在于，checkbox可以多选，而radio这意味着用户可以勾选或取消勾选这个选项。-->
+
+<input type="submit" value="登录"id="submit"><!-----<input type="button" >元素用于创建一个普通按钮，这个按钮不会提交表单。<input type="submit"> 元素用于创建一个提交按钮。当你点击这个按钮时，它将提交所在的表单，并发送请求到表单的action属性指定的URL.----->
+<a href="C:\Users\贾凯伦\Desktop\双零\runoob\Untitled-5.html" id="activateLink">账号激活</a>
+</form>
+
+</div>
+</body>
+</html>
