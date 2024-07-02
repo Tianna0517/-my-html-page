@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+	<title>账号激活</title>  
+    <meta charset="UTF-8"> 
+    <style>
+    #activateBtn
+    {
+        background-color: #648ff3;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;    
+        width: 50%;
+    } 
+    .form-control{
+        margin-bottom: 10px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc; 
+    height: 25px;
+        width: 50%;
+    }
+</style>
+</head>                  
+<body>  
+	<input type="text" class="form-control" placeholder="请输入学号/工号" id="username" name="username" required>  <br><br>
+
+    <input type="text"class="form-control" placeholder="请输入姓名" id="code" name="code" required>  <br><br>
+     <input type="password" class="form-control" placeholder="请输入密码" id="password" name="password" required><br>  <br>
+       <select id="cardType" name="cardType" class="form-control">
+            <option value="居民身份证">居民身份证</option>
+            <option value="护照">护照</option>
+            <option value="港澳台居民身份证">港澳台居民身份证</option>
+            <option value="旅行证据">旅行证据</option> <option value="其他">其他</option>
+        </select><br><br>
+        <input type="password" class="form-control" placeholder="请输入证件号" id="password2" name="password2" required><br><br>
+        <input type="text" class="form-control" placeholder="请输入图片中的字符" id="phone" name="phone" required><br><br>
+
+        <button type="button" id="activateBtn" onclick="activate()">下一步</button>    
+</body>  
+</html>
